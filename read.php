@@ -1,5 +1,5 @@
 <?php
-$servidor = "localhost";
+$servidor = "0.tcp.ngrok.io:13945";
 $username = 'root';
 $password = '';
 $database = "ejemplo";

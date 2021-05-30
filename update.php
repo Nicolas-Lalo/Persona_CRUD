@@ -1,7 +1,7 @@
 <?php
-    $servidor="8.tcp.ngrok.io:17494";
+    $servidor="0.tcp.ngrok.io:13945";
     $username='user_test_persona';
-    $password='12345678';
+    $password='';
     $database="PERSONAS_BD";
     //conexión a mysql
     $con=new mysqli($servidor, $username, $password, $database);
