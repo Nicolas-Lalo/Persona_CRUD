@@ -1,6 +1,6 @@
 <?php
 
-    $servidor = "0.tcp.ngrok.io:15758";
+    $servidor = "8.tcp.ngrok.io:11388";
     $username = 'root';
     $password = '';
     $database = "personas_bd";
