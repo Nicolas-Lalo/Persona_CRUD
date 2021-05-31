@@ -74,7 +74,7 @@ $con=new mysqli($servidor, $username, $password, $database);
     <div class="is-widescreen mt-4">
         <nav class="breadcrumb is-right" aria-label="breadcrumbs">
             <ul>
-                <li><a href="#">Lista personas</a></li>
+                <li><a href="index.php">Lista personas</a></li>
                 <li class="is-active"><a href="#" aria-current="page"></a> Detalles persona</li>
             </ul>
         </nav>
@@ -85,7 +85,7 @@ $con=new mysqli($servidor, $username, $password, $database);
             <h1 class="title">Detalles de <?php echo $us['name']?>.</h1>
             <div class="is-flex is-align-items-center">
                 <input class="input is-rounded is-small" type="text" placeholder="Buscar">
-                <a href="update.php" class="button is-link ml-2">Editar </a>
+                <a href="update.php?id=<?php echo $row['id'] ?>" class="button is-link ml-2">Editar </a>
             </div>
         </div>
     </div>
@@ -139,7 +139,8 @@ $con=new mysqli($servidor, $username, $password, $database);
                         <p class="is-size-7 mb-1 "> <?php echo $us['needs']?> </p>
                         <p class='is-size-7 mb-0  mt-3' ><b>Wants:</b></p>
                         <p class="is-size-7 mb-1 "> <?php echo $us['wants']?> </p>
-                        <p class='is-size-7 mb-0  mt-3'><b>Fears:</b></p>                                <p class="is-size-7 mb-1"> <?php echo $us['fears']?> </p>
+                        <p class='is-size-7 mb-0  mt-3'><b>Fears:</b></p>                               
+                         <p class="is-size-7 mb-1"> <?php echo $us['fears']?> </p>
                         <p class='is-size-7 mb-0  mt-3'><b>Interests:</b></p>
                         <p class="is-size-7 mb-1 "> <?php echo $us['interests']?> </p>
                         <p class='is-size-7 mb-0  mt-3'><b>Tools:</b></p>

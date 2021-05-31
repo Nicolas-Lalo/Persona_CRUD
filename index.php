@@ -127,7 +127,7 @@ $con->close();
                             </div>
                         </div>
                         <footer class="card-footer py-1">
-                                <a href="#" class="card-footer-item p-1" style='border-right:0px'> <!-- Eliminar -->
+                                <a  href="delete.php?id=<?php echo $row['id'] ?>" class="card-footer-item p-1" style='border-right:0px'> <!-- Eliminar -->
                                     <div class="has-background-primary is-flex is-justify-content-center is-align-content-center is-align-items-center"
                                     style='border-radius:50%;width:35px;height:35px'>
                                         <i class="fas fa-trash-alt"></i>
@@ -139,7 +139,7 @@ $con->close();
                                         <i class="fas fa-edit"></i>
                                     </div>
                                 </a>
-                                <a href="details.php?id=<?php echo $row['id'] ?>" class="card-footer-item p-1" style='border-right:0px'> <!-- Ver -->
+                                <a href="detalles_persona.php?id=<?php echo $row['id'] ?>" class="card-footer-item p-1" style='border-right:0px'> <!-- Ver -->
                                     <div class="has-background-primary is-flex is-justify-content-center is-align-content-center is-align-items-center"
                                     style='border-radius:50%;width:35px;height:35px'>
                                         <i class="far fa-eye"></i>

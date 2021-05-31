@@ -63,7 +63,7 @@
     <title>tabla de proyectos</title>
 </head>
 <body>
-<div>
+   <div>
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="https://bulma.io">
@@ -107,7 +107,7 @@
     <div class="mt-4">
         <nav class="breadcrumb is-right" aria-label="breadcrumbs">
             <ul>
-                <li><a href="#">Lista personas</a></li>
+                <li><a href="index.php">Lista personas</a></li>
                 <li class="is-active"><a href="#" aria-current="page">Editar infromación</a></li>
             </ul>
         </nav>
