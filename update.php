@@ -247,7 +247,7 @@
         <div class="container is-widescreen ">   
             <div class="level-right mt-4">
                 <button class="button is-link is-light">Cancelar</button>
-                <button class="button is-link">Guardar cambios</button>
+                <button name="name" class="button is-link">Guardar cambios</button>
             </div>
         </div>
     </div>
