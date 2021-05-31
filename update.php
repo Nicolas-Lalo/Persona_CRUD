@@ -1,8 +1,8 @@
 <?php
-    $servidor="0.tcp.ngrok.io:13945";
-    $username='user_test_persona';
-    $password='';
-    $database="PERSONAS_BD";
+    $servidor = "0.tcp.ngrok.io:15758";
+    $username = 'root';
+    $password = '';
+    $database = "personas_bd";
     //conexión a mysql
     $con=new mysqli($servidor, $username, $password, $database);
     if (isset($_GET['id'])){

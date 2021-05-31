@@ -1,12 +1,12 @@
 <?php
-$servidor = "0.tcp.ngrok.io:13945";
+$servidor = "0.tcp.ngrok.io:15758";
 $username = 'root';
 $password = '';
-$database = "ejemplo";
+$database = "personas_bd";
 //conexión a mysql
 $con = new mysqli($servidor, $username, $password, $database);
 //consulta mysql
-$consulta = "select * from usuarios";
+$consulta = "select * from persona";
 //ejecutar consulta
 $resultados = $con->query($consulta);
 
