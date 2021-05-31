@@ -31,18 +31,60 @@ $con->close();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/mystyles.css">
-    <title>tabla de proyectos</title>
+    <title>Crear persona</title>
+    <script src="https://kit.fontawesome.com/3176d7a66a.js" crossorigin="anonymous"></script>
 </head>
+
+<style>
+    .rounded-border{border-radius: 1.25rem}.bordered{border:1px solid #B8B8B8}.bordered-light{border:1px solid #757763}
+    .card-footer-item:hover{color: #B8B8B8}
+    .link-name:hover{color: #B8B8B8}
+</style>
 
 <body>
 
-    <section class="hero is-link">
-        <div class="hero-body has-text-centered">
-            <p class="title">
-                Formulario de registro de usuarios
-            </p>
+    <!-- NAVBAR -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.php">
+            <img src="img/logo.png" width="112" height="28" alt="logo">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
         </div>
-    </section>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Home
+                </a>
+                <a class="navbar-item">
+                    Documentation
+                </a>
+                <a class="navbar-item">
+                    About Us
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                <a class="navbar-item">
+                    About Us
+                </a>
+                <div class="navbar-item">
+                    <div class="buttons">
+                    <a class="button  is-rounded is-outlined is-white">
+                    Log in
+                    </a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </nav>
 
     <div class="container mt-5 mb-5">
         <div class="columns">
@@ -61,12 +103,14 @@ $con->close();
             </div>
         </div>
     </div>
-
-    <div class="container">
-        <div class="box ml-6 mr-6 mb-6">
+    <br>
+    <div class="container has-background-primary mb-6 bordered rounded-border mt-4">
+        <div class="box ml-6 mr-6 mb-6 has-background-primary "> <!-- cambiar color -->
             <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
 
             <!-- secciones -->
+            <div class="card">
+                <div class="card-content">
             <nav class="tabs is-boxed is-fullwidth is-large">
                 <div class="container">
                     <ul>
@@ -79,24 +123,24 @@ $con->close();
             <!-- secciones -->
             <!--contenido seccion 1  -->
             <div class="container section">
-                <div id="seccion_1" class="content-tab" >
+                <div id="seccion_1" class="content-tab " >
 
-                    <div class="field">
-                        <label class="label">Nombre:</label>
+                    <div class="field ">
+                        <label class="label has-text-grey-light">Nombre:</label>
                         <div class="control">
-                            <input class="input is-primary" type="text" name="name" required>
+                            <input class="input is-primary " type="text" name="name" required>
                         </div>
                     </div>
 
                     <div class="field">
-                        <label class="label">Ocupación:</label>
+                        <label class="label has-text-grey-light">Ocupación:</label>
                         <div class="control">
                             <input class="input is-primary" type="text" name="position" required>
                         </div>
                     </div>
 
                     <div class="field">
-                        <label class="label">Location:</label>
+                        <label class="label has-text-grey-light">Location:</label>
                         <div class="control">
                             <input class="input is-primary" type="text" name="location" required>
                         </div>
@@ -104,28 +148,28 @@ $con->close();
 
 
                     <div class="field">
-                        <label class="label">Industry:</label>
+                        <label class="label has-text-grey-light">Industry:</label>
                         <div class="control">
                             <input class="input is-primary" type="text" name="industry" required>
                         </div>
                     </div>
 
                     <div class="field">
-                        <label class="label">Income:</label>
+                        <label class="label has-text-grey-light">Income:</label>
                         <div class="control">
                             <input class="input is-primary" type="text" name="income" required>
                         </div>
                     </div>
 
                     <div class="field">
-                        <label class="label">Age:</label>
+                        <label class="label has-text-grey-light">Age:</label>
                         <div class="control">
                             <input class="input is-primary" type="text" name="age" required>
                         </div>
                     </div>
 
                     <div class="field">
-                        <label class="label">Marital status:</label>
+                        <label class="label has-text-grey-light">Marital status:</label>
                         <div class="control">
                             <input class="input is-primary" type="text" name="marital_status" required>
                         </div>
@@ -139,28 +183,35 @@ $con->close();
             <div id="seccion_2" class="content-tab" style="display:none">
 
                 <div class="field">
-                        <label class="label">Story:</label>
+                        <label class="label has-text-grey-light">Story:</label>
                         <div class="control">
                             <input class="input is-primary" type="text" name="story" required>
                         </div>
                     </div>
 
                     <div class="field">
-                    <label class="label">Goals:</label>
+                    <label class="label has-text-grey-light">Goals:</label>
                     <div class="control">
                         <input class="input is-primary" type="text" name="goals" required>
                     </div>
                     </div>
 
                     <div class="field">
-                        <label class="label">Needs:</label>
+                        <label class="label has-text-grey-light">Needs:</label>
                         <div class="control">
                             <input class="input is-primary" type="text" name="needs" required>
                         </div>
                     </div>
 
                     <div class="field">
-                    <label class="label">Fears:</label>
+                        <label class="label has-text-grey-light">Wants:</label>
+                        <div class="control">
+                            <input class="input is-primary" type="text" name="needs" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                    <label class="label has-text-grey-light">Fears:</label>
                     <div class="control">
                         <input class="input is-primary" type="text" name="fears" required>
                     </div>
@@ -173,33 +224,35 @@ $con->close();
 
             <div id="seccion_3" class="content-tab" style="display:none">
                 <div class="field">
-                        <label class="label">Interests:</label>
+                        <label class="label has-text-grey-light">Interests:</label>
                         <div class="control">
                             <input class="input is-primary" type="text" name="interests" required>
                         </div>
                     </div>
 
                     <div class="field">
-                        <label class="label">Tools:</label>
+                        <label class="label has-text-grey-light">Tools:</label>
                         <div class="control">
                             <input class="input is-primary" type="text" name="tools" required>
                         </div>
                     </div>
 
                     <div class="field">
-                        <label class="label">Social networks:</label>
+                        <label class="label has-text-grey-light">Social networks:</label>
                         <div class="control">
                             <input class="input is-primary" type="text" name="social_networks" required>
                         </div>
                     </div>
 
                     <div class="field">
-                        <label class="label">Brands:</label>
+                        <label class="label has-text-grey-light">Brands:</label>
                         <div class="control">
                             <input class="input is-primary" type="text" name="brands" required>
                         </div>
                     </div>
 
+            </div>
+            </div>
             </div>
             <!--contenido seccion 3  -->
 
