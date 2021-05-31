@@ -104,7 +104,16 @@ $con->close();
         </div>
     </div>
     <br>
-    <div class="container has-background-primary mb-6 bordered rounded-border mt-4">
+    <div class="container">
+    <nav class="breadcrumb is-right" aria-label="breadcrumbs">
+                    <ul>
+                        <li><a href="index.php">Lista personas</a></li>
+                        <li class="is-active"><a href="#" aria-current="page"></a> Detalles Persona</li>
+                    </ul>
+                </nav>
+    <h1 class="title ">Agregar nueva persona</h1>
+    <div class="container has-background-primary mb-6 bordered rounded-border mt-4 ">
+    
         <div class="box ml-6 mr-6 mb-6 has-background-primary "> <!-- cambiar color -->
             <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
 
@@ -255,7 +264,7 @@ $con->close();
             </div>
             </div>
             <!--contenido seccion 3  -->
-
+            </div>
                 
 
 
