@@ -63,57 +63,64 @@
     <title>tabla de proyectos</title>
 </head>
 <body>
-   <div>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="https://bulma.io">
-                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-                </a>
-
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                </a>
-            </div>
-
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item">
-                        Home
+<div>
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.php">
+                    <img src="img/logo.png" width="112" height="28" alt="logo">
                     </a>
 
-                    <a class="navbar-item">
-                        Documentation
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                     </a>
                 </div>
 
-                <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                    <a class="button is-light">
-                        Regístrarse
-                    </a>
-                    <a class="button is-primary">
-                        <strong>Iniciar Sesión</strong>
-                    </a>
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item">
+                            Home
+                        </a>
+                        <a class="navbar-item">
+                            Documentation
+                        </a>
+                        <a class="navbar-item">
+                            About Us
+                        </a>
+                    </div>
+
+                    <div class="navbar-end">
+                        <a class="navbar-item">
+                            About Us
+                        </a>
+                        <div class="navbar-item">
+                            <div class="buttons">
+                            <a class="button  is-rounded is-outlined is-white">
+                            Log in
+                            </a>
+                        </div>
                     </div>
                 </div>
-                </div>
             </div>
         </nav>
     </div>
 
-    <div class="mt-4">
-        <nav class="breadcrumb is-right" aria-label="breadcrumbs">
-            <ul>
-                <li><a href="index.php">Lista personas</a></li>
-                <li class="is-active"><a href="#" aria-current="page">Editar infromación</a></li>
-            </ul>
-        </nav>
-    </div>
-    
-    <div class="container is-fullhd">
+     
+    <div class="container is-fullhd mt-6">
+        
+            <div class="level-right"> 
+                <div class="is-widescreen mt-6">
+                    <nav class="breadcrumb is-right" aria-label="breadcrumbs">
+                        <ul>
+                            <li><a href="index.php">Lista personas</a></li>
+                            <li class="is-active"><a href="#" aria-current="page"></a> Editar información</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        
         <h1 class="title">Editar información de <?php echo $us['name']?>.</h1>
             <?php
             if (isset($notif)){
@@ -247,7 +254,7 @@
         <div class="container is-widescreen ">   
             <div class="level-right mt-4">
                 <button class="button is-link is-light">Cancelar</button>
-                <button class="button is-link">Guardar cambios</button>
+                <button name="name" class="button is-link">Guardar cambios</button>
             </div>
         </div>
     </div>

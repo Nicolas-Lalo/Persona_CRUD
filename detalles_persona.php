@@ -31,61 +31,69 @@ $con=new mysqli($servidor, $username, $password, $database);
 </head>
 <body>
     <div>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="https://bulma.io">
-                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-                </a>
-
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                </a>
-            </div>
-
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item">
-                        Home
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.php">
+                    <img src="img/logo.png" width="112" height="28" alt="logo">
                     </a>
 
-                    <a class="navbar-item">
-                        Documentation
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                     </a>
                 </div>
 
-                <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                    <a class="button is-light">
-                        Regístrarse
-                    </a>
-                    <a class="button is-primary">
-                        <strong>Iniciar Sesión</strong>
-                    </a>
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item">
+                            Home
+                        </a>
+                        <a class="navbar-item">
+                            Documentation
+                        </a>
+                        <a class="navbar-item">
+                            About Us
+                        </a>
+                    </div>
+
+                    <div class="navbar-end">
+                        <a class="navbar-item">
+                            About Us
+                        </a>
+                        <div class="navbar-item">
+                            <div class="buttons">
+                            <a class="button  is-rounded is-outlined is-white">
+                            Log in
+                            </a>
+                        </div>
                     </div>
                 </div>
-                </div>
             </div>
         </nav>
     </div>
 
-    <div class="is-widescreen mt-4">
-        <nav class="breadcrumb is-right" aria-label="breadcrumbs">
-            <ul>
-                <li><a href="index.php">Lista personas</a></li>
-                <li class="is-active"><a href="#" aria-current="page"></a> Detalles persona</li>
-            </ul>
-        </nav>
-    </div>
+     
     
-    <div class="container is-widescreen">
+    <div class="container is-widescreen mt-6">
+        <div class="mt-6">
+        <div class="level-right mt-6"> 
+            <div class="is-widescreen mt-6">
+                <nav class="breadcrumb is-right" aria-label="breadcrumbs">
+                    <ul>
+                        <li><a href="index.php">Lista personas</a></li>
+                        <li class="is-active"><a href="#" aria-current="page"></a> Detalles Persona</li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
         <div class=" is-flex is-justify-content-space-between mt-6">
             <h1 class="title">Detalles de <?php echo $us['name']?>.</h1>
             <div class="is-flex is-align-items-center">
                 <input class="input is-rounded is-small" type="text" placeholder="Buscar">
-                <a href="update.php?id=<?php echo $row['id'] ?>" class="button is-link ml-2">Editar </a>
+                <a href="update.php?id=<?php echo $us['id'] ?>" class="button is-link ml-2">Editar </a>
             </div>
         </div>
     </div>
