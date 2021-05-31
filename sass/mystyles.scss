@@ -4,26 +4,59 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
 // Set your brand colors
+$black-blue: #00091C; //Body
+$container-color: #001A31; //Contenedor, Navbar, Cards
+$azul-calido: #000C23; //Hero, contenedorFondo
+$azul-claro: #1E83DB; //Botones, Links, Labels
+$gris: #B8B8B8;
+$gris-claro: #E1E1E1;
 $purple: #8A4D76;
-$pink: #FA7C91;
+$pink: #ffdc14;
 $brown: #757763;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
+$info: $azul-calido;
 $grey-dark: $brown;
 $grey-light: $beige-light;
-$primary: $purple;
-$link: $pink;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
+$white: $gris-claro;
+$primary: $azul-calido;
+$link: $azul-claro;
+$widescreen-enabled: true;
+$fullhd-enabled: true;
 
 // Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
+$body-background-color: $black-blue;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
+
+//NavBar
+$navbar-background-color: $container-color;
+$navbar-height: 3.75rem;
+$navbar-item-hover-background-color: none;//$black-blue;
+$navbar-item-color: $gris-claro;
+
+//Title/Subtitle
+$title-color: $gris-claro;
+$title-size: 2rem;
+//$title-family: ;
+//$subtitle-color: 
+//$subtitle-size: 
+
+//Inputs
+$input-color: $gris-claro;
+$input-background-color: $black-blue;
+$input-border-color: $gris;
+$input-icon-color: $brown;
+
+//Cards
+$card-background-color: $container-color;
+$card-radius: 0.8rem;
+$card-footer-border-top: 1px solid $brown;
+// $card-color: $purple;
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";
