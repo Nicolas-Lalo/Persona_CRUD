@@ -74,16 +74,21 @@ $con=new mysqli($servidor, $username, $password, $database);
         </nav>
     </div>
 
-    <div class="is-widescreen mt-4">
-        <nav class="breadcrumb is-right" aria-label="breadcrumbs">
-            <ul>
-                <li><a href="index.php">Lista personas</a></li>
-                <li class="is-active"><a href="#" aria-current="page"></a> Detalles persona</li>
-            </ul>
-        </nav>
-    </div>
+     
     
-    <div class="container is-widescreen">
+    <div class="container is-widescreen mt-6">
+        <div class="mt-6">
+        <div class="level-right mt-6"> 
+            <div class="is-widescreen mt-6">
+                <nav class="breadcrumb is-right" aria-label="breadcrumbs">
+                    <ul>
+                        <li><a href="index.php">Lista personas</a></li>
+                        <li class="is-active"><a href="#" aria-current="page"></a> Detalles Persona</li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
         <div class=" is-flex is-justify-content-space-between mt-6">
             <h1 class="title">Detalles de <?php echo $us['name']?>.</h1>
             <div class="is-flex is-align-items-center">

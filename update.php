@@ -107,16 +107,20 @@
         </nav>
     </div>
 
-    <div class="mt-4">
-        <nav class="breadcrumb is-right" aria-label="breadcrumbs">
-            <ul>
-                <li><a href="index.php">Lista personas</a></li>
-                <li class="is-active"><a href="#" aria-current="page">Editar infromación</a></li>
-            </ul>
-        </nav>
-    </div>
-    
-    <div class="container is-fullhd">
+     
+    <div class="container is-fullhd mt-6">
+        
+            <div class="level-right"> 
+                <div class="is-widescreen mt-6">
+                    <nav class="breadcrumb is-right" aria-label="breadcrumbs">
+                        <ul>
+                            <li><a href="index.php">Lista personas</a></li>
+                            <li class="is-active"><a href="#" aria-current="page"></a> Editar información</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        
         <h1 class="title">Editar información de <?php echo $us['name']?>.</h1>
             <?php
             if (isset($notif)){
