@@ -108,7 +108,7 @@ $con->close();
     <nav class="breadcrumb is-right" aria-label="breadcrumbs">
                     <ul>
                         <li><a href="index.php">Lista personas</a></li>
-                        <li class="is-active"><a href="#" aria-current="page"></a> Detalles Persona</li>
+                        <li class="is-active"><a href="#" aria-current="page"></a> Nueva persona</li>
                     </ul>
                 </nav>
     <h1 class="title ">Agregar nueva persona</h1>
@@ -264,7 +264,7 @@ $con->close();
             </div>
             </div>
             <!--contenido seccion 3  -->
-            </div>
+            
                 
 
 
@@ -272,6 +272,7 @@ $con->close();
                     <div class="control">
                         <button class="button is-link">Guardar registro</button>
                     </div>
+                </div>
                 </div>
 
             </form>
